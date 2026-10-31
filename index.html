@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Pawar | Data Analyst & Business Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Aditya Pawar - Final-year B.Tech Computer Data Science student, Data Analyst, and Business Analyst skilled in SQL, Power BI, Excel, and Financial Variance Analysis.">
+  <meta name="keywords" content="Aditya Pawar, Data Analyst, Business Analyst, Power BI, SQL, Excel, Nagpur, Portfolio">
+  <meta name="author" content="Aditya Pawar">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Chart.js CDN for Interactive Dashboard Preview -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-box">AP</div>
+        <div class="logo-text">
+          <span class="name">Aditya Pawar</span>
+          <span class="role-tag">Data & Business Analyst</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-tie"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-chart-simple"></i> Skills</a></li>
+          <li><a href="#live-demo" class="nav-link highlight-link"><i class="fa-solid fa-chart-pie"></i> Live Metrics</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline-sm" id="btn-view-resume">
+          <i class="fa-solid fa-file-invoice"></i> Resume
+        </button>
+        <a href="#contact" class="btn btn-primary-sm">
+          <span>Let's Connect</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Full-Time Data Analyst Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Transforming Complex Data Into <span class="gradient-text">Profitable Business Decisions</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">Specialized in: </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Hi, I'm <strong>Aditya Pawar</strong>, a final-year B.Tech Computer Data Science student with proven expertise in 
+            <strong>SQL, Microsoft Excel, Power BI</strong>, and <strong>Financial Variance Analysis</strong>. I bridge technical data hygiene with 
+            executive storytelling—delivering measurable outcomes like a <strong>~20% reduction in stockouts</strong> and a <strong>12% sales lift</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-cubes"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#live-demo" class="btn btn-outline">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Try Live Dashboard</span>
+            </a>
+            <button class="btn btn-glass" id="btn-copy-email-hero">
+              <i class="fa-regular fa-copy"></i>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Hero Metrics Counters -->
+          <div class="hero-stats-strip">
+            <div class="stat-card">
+              <div class="stat-number gradient-cyan">~20%</div>
+              <div class="stat-label">Stockout Reduction</div>
+              <div class="stat-sub">Inventory Optimization</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number gradient-blue">+12%</div>
+              <div class="stat-label">Sales Revenue Lift</div>
+              <div class="stat-sub">Dynamic Markdown Strategy</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number gradient-emerald">50+</div>
+              <div class="stat-label">SKUs Analyzed</div>
+              <div class="stat-sub">Perishable Goods Modeling</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number gradient-violet">4+</div>
+              <div class="stat-label">Global Simulations</div>
+              <div class="stat-sub">Deloitte, Tata, J.P. Morgan</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Interactive Mock Analytics Dashboard Card -->
+        <div class="hero-visual">
+          <div class="glass-dashboard-card">
+            <div class="dashboard-card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="dashboard-title">
+                <i class="fa-solid fa-chart-simple text-cyan"></i> Real-Time Inventory Intelligence
+              </div>
+              <span class="live-pill">● LIVE ENGINE</span>
+            </div>
+
+            <!-- Mini KPI Cards -->
+            <div class="mini-kpi-grid">
+              <div class="mini-kpi">
+                <span class="mini-kpi-title">Stockout Velocity</span>
+                <div class="mini-kpi-value text-emerald">-20.4% <i class="fa-solid fa-arrow-trend-down"></i></div>
+                <span class="mini-kpi-footer">vs baseline period</span>
+              </div>
+              <div class="mini-kpi">
+                <span class="mini-kpi-title">Revenue Growth</span>
+                <div class="mini-kpi-value text-cyan">+12.2% <i class="fa-solid fa-arrow-trend-up"></i></div>
+                <span class="mini-kpi-footer">dynamic reorder</span>
+              </div>
+              <div class="mini-kpi">
+                <span class="mini-kpi-title">Ledger Accuracy</span>
+                <div class="mini-kpi-value text-violet">100.0% <i class="fa-solid fa-check-double"></i></div>
+                <span class="mini-kpi-footer">zero audit variance</span>
+              </div>
+            </div>
+
+            <!-- Mini Chart Canvas -->
+            <div class="hero-chart-container">
+              <canvas id="heroMiniChart"></canvas>
+            </div>
+
+            <div class="dashboard-footer-status">
+              <div class="tech-tags">
+                <span class="badge-tag">SQL</span>
+                <span class="badge-tag">Excel Pivot</span>
+                <span class="badge-tag">Power BI</span>
+                <span class="badge-tag">Variance Model</span>
+              </div>
+              <div class="sync-status">
+                <i class="fa-solid fa-arrows-rotate fa-spin text-cyan"></i> Synced: Oct 2026
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-terminal"></i> EXECUTIVE SUMMARY</span>
+          <h2 class="section-title">The Analyst Behind The Numbers</h2>
+          <p class="section-desc">Merging mathematical rigor, data cleaning integrity, and executive financial leadership.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card profile-card">
+            <div class="avatar-wrapper">
+              <div class="avatar-circle">
+                <img src="aditya-pawar.png" alt="Aditya Pawar - Data Analyst & Business Analyst" class="avatar-img">
+              </div>
+              <div class="avatar-badge" title="Verified Professional">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+            <h3 class="profile-name">Aditya Pawar</h3>
+            <p class="profile-role">Data Analyst | Business Analyst</p>
+            <p class="profile-location"><i class="fa-solid fa-location-dot text-cyan"></i> Butibori, Nagpur, Maharashtra</p>
+
+            <div class="profile-quick-stats">
+              <div class="p-stat">
+                <span class="p-num">2027</span>
+                <span class="p-txt">B.Tech CDS Expected</span>
+              </div>
+              <div class="p-stat">
+                <span class="p-num">20+</span>
+                <span class="p-txt">Students Association</span>
+              </div>
+              <div class="p-stat">
+                <span class="p-num">100%</span>
+                <span class="p-txt">Audit Compliance</span>
+              </div>
+            </div>
+
+            <div class="profile-contact-links">
+              <a href="mailto:adityapawar739@gmail.com" class="p-link" title="Email Aditya">
+                <i class="fa-solid fa-envelope"></i> adityapawar739@gmail.com
+              </a>
+              <a href="tel:9373113299" class="p-link" title="Call Aditya">
+                <i class="fa-solid fa-phone"></i> +91 9373113299
+              </a>
+            </div>
+          </div>
+
+          <div class="about-narrative">
+            <div class="narrative-box">
+              <h3 class="narrative-title">
+                Turning Raw Numbers Into Strategic Growth
+              </h3>
+              <p>
+                I am a final-year <strong>B.Tech Computer Data Science</strong> student at 
+                <strong>Suryodaya College of Engineering, Nagpur</strong> (Affiliated to RTMNU). 
+                My focus lies at the crossroads of data infrastructure, business strategy, and quantitative analysis.
+              </p>
+              <p>
+                Unlike conventional analysts who solely produce static charts, I dive deep into operational realities. 
+                Whether architecting real-time perishable inventory engines that prevent stockouts or presiding as 
+                <strong>Treasurer of the 20+ member Data Science Student Association</strong> to balance ledgers and variance reports, 
+                I make sure every data point drives a bottom-line business decision.
+              </p>
+            </div>
+
+            <!-- Value Pillars -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon bg-cyan-glow">
+                  <i class="fa-solid fa-broom"></i>
+                </div>
+                <div>
+                  <h4 class="pillar-heading">Data Cleaning & Hygiene</h4>
+                  <p class="pillar-text">Handling missing values, outlier detection, data validation, and ensuring trusted SQL pipelines.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon bg-blue-glow">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div>
+                  <h4 class="pillar-heading">Variance & Financial Logic</h4>
+                  <p class="pillar-text">Deep experience tracking budgets, reconciliations, expense categorizations, and board reporting.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon bg-emerald-glow">
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div>
+                  <h4 class="pillar-heading">Executive Dashboards</h4>
+                  <p class="pillar-text">Crafting intuitive Power BI & Excel interactive visual stories for senior business stakeholders.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-gears"></i> TECHNICAL REPERTOIRE</span>
+          <h2 class="section-title">Core Competencies & Toolset</h2>
+          <p class="section-desc">Practical skills honed through commercial project implementation, academic rigor, and global simulations.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Data Analysis & Tools -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-badge text-cyan">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Data Analysis & Tools</h3>
+                <span class="cat-count">4 Key Technologies</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-server text-cyan"></i> SQL (MySQL / Postgre)</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                <span class="skill-desc">Complex queries, Multi-table Joins, CTEs, Aggregations, Window functions</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-table text-emerald"></i> Microsoft Excel</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+                <span class="skill-desc">Pivot Tables, VLOOKUP, INDEX/MATCH, Dynamic Reorder Models, Scenarios</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-chart-column text-yellow"></i> Power BI</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                <span class="skill-desc">DAX Measures, Data Modeling, Star Schemas, Interactive Filters, Drill-downs</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-file-excel text-emerald"></i> Google Sheets</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                <span class="skill-desc">Collaborative budgeting, QUERY function, Automated tracker integrations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Business & Financial Analysis -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-badge text-blue">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Business & Financial Analysis</h3>
+                <span class="cat-count">Applied Financial Acumen</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-arrows-split-up-and-left text-blue"></i> Variance Analysis</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+                <span class="skill-desc">Budget vs. Actual tracking, root-cause discrepancy detection, board summaries</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-boxes-stacked text-violet"></i> Inventory & Demand Analysis</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                <span class="skill-desc">Safety stock modeling, Stockout mitigation, Expiry-rate tracking, Reorder points</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-calculator text-emerald"></i> Budget Tracking & Ledgers</span>
+                  <span class="skill-pct">94%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 94%;"></div></div>
+                <span class="skill-desc">Income/expense ledger maintenance, reserve fund allocation, audit readiness</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-arrow-trend-up text-cyan"></i> Trend & Forecasting</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                <span class="skill-desc">Sales velocity patterns, seasonal spikes, markdown timeline optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Data Handling & Storytelling -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-badge text-emerald">
+                <i class="fa-solid fa-filter-circle-dollar"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Data Handling & Storytelling</h3>
+                <span class="cat-count">End-to-End Insights</span>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="pill-cloud">
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> Data Cleaning</span>
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> Outlier Treatment</span>
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> Data Visualization</span>
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> Executive Reporting</span>
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> KPI Dashboarding</span>
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> Data Reconciliation</span>
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> Audit Preparation</span>
+                <span class="tech-pill"><i class="fa-solid fa-check"></i> Stakeholder Presentation</span>
+              </div>
+
+              <div class="sub-category-block">
+                <h4 class="sub-title"><i class="fa-solid fa-code text-cyan"></i> Technical Foundations & Web</h4>
+                <div class="pill-cloud">
+                  <span class="tech-pill secondary"><i class="fa-brands fa-html5"></i> HTML5</span>
+                  <span class="tech-pill secondary"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                  <span class="tech-pill secondary"><i class="fa-brands fa-js"></i> Full-Stack Basics</span>
+                  <span class="tech-pill secondary"><i class="fa-solid fa-brain"></i> Computer Data Science</span>
+                </div>
+              </div>
+
+              <div class="sub-category-block">
+                <h4 class="sub-title"><i class="fa-solid fa-comments text-violet"></i> Communication Languages</h4>
+                <div class="language-tags">
+                  <span class="lang-tag"><strong>English:</strong> Fluent (Professional)</span>
+                  <span class="lang-tag"><strong>Hindi:</strong> Fluent (Native)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LIVE METRICS DEMO (Recruiter Wow Factor!) -->
+    <section class="section live-demo-section" id="live-demo">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-bolt text-yellow"></i> INTERACTIVE ANALYTICS ENGINE</span>
+          <h2 class="section-title">Live Portfolio Data Sandbox</h2>
+          <p class="section-desc">Experience Aditya's analytical models in action. Switch datasets below to simulate real business telemetry.</p>
+        </div>
+
+        <div class="interactive-simulator-wrapper">
+          <!-- Control Tabs -->
+          <div class="sim-tabs-bar">
+            <button class="sim-tab active" data-scenario="inventory">
+              <i class="fa-solid fa-boxes-stacked"></i> Grocery Inventory & Spoilage Model
+            </button>
+            <button class="sim-tab" data-scenario="sales">
+              <i class="fa-solid fa-chart-line"></i> Dynamic Markdown & Sales Velocity
+            </button>
+            <button class="sim-tab" data-scenario="finance">
+              <i class="fa-solid fa-scale-balanced"></i> Student Association Budget Variance
+            </button>
+          </div>
+
+          <!-- Sandbox Content -->
+          <div class="sim-body">
+            <div class="sim-metrics-row">
+              <div class="sim-metric-card">
+                <span class="sim-m-label" id="metric1-label">Total SKUs Monitored</span>
+                <span class="sim-m-val text-cyan" id="metric1-val">54 Products</span>
+                <span class="sim-m-note" id="metric1-note">Perishable Dairy & Produce</span>
+              </div>
+              <div class="sim-metric-card">
+                <span class="sim-m-label" id="metric2-label">Stockout Incidents</span>
+                <span class="sim-m-val text-emerald" id="metric2-val">-20% Rate</span>
+                <span class="sim-m-note" id="metric2-note">Optimized reorder threshold</span>
+              </div>
+              <div class="sim-metric-card">
+                <span class="sim-m-label" id="metric3-label">Revenue Impact</span>
+                <span class="sim-m-val text-yellow" id="metric3-val">+12.0%</span>
+                <span class="sim-m-note" id="metric3-note">Waste converted to sales</span>
+              </div>
+              <div class="sim-metric-card">
+                <span class="sim-m-label" id="metric4-label">Model Accuracy</span>
+                <span class="sim-m-val text-violet" id="metric4-val">98.4%</span>
+                <span class="sim-m-note" id="metric4-note">Validated against actuals</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Chart Area -->
+            <div class="sim-chart-container">
+              <div class="chart-header-bar">
+                <div class="chart-title" id="sim-chart-title">
+                  <i class="fa-solid fa-chart-area text-cyan"></i> Stock Level vs. Expiry Risk Curve (Real-time Simulation)
+                </div>
+                <div class="chart-actions">
+                  <button class="btn-tiny" id="refresh-sim-data"><i class="fa-solid fa-rotate"></i> Re-simulate</button>
+                </div>
+              </div>
+              <div class="chart-canvas-box">
+                <canvas id="interactiveCanvas"></canvas>
+              </div>
+            </div>
+
+            <!-- Insight Callout -->
+            <div class="sim-insight-callout">
+              <i class="fa-solid fa-lightbulb text-yellow"></i>
+              <div>
+                <strong>Analyst Takeaway:</strong>
+                <span id="sim-insight-text">
+                  By tracking shelf-life velocity against sales velocity, reordering is triggered before safety stocks breach critical minimums, cutting stockouts by ~20% while saving perishable stock from markdowns.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & CASE STUDIES SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-chart-gantt"></i> PORTFOLIO CASE STUDIES</span>
+          <h2 class="section-title">High-Impact Analytics Projects</h2>
+          <p class="section-desc">Real business problems transformed into quantitative solutions and measurable ROI.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="inventory">Inventory & Retail</button>
+          <button class="filter-btn" data-filter="finance">Financial & Budget</button>
+          <button class="filter-btn" data-filter="simulations">Corporate Simulations</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Featured Project 1: Grocery Inventory Analytics -->
+          <div class="project-card featured" data-category="inventory">
+            <div class="project-banner">
+              <div class="badge-row">
+                <span class="badge featured-badge"><i class="fa-solid fa-star"></i> FLAGSHIP PROJECT</span>
+                <span class="badge tech-badge">Microsoft Excel</span>
+                <span class="badge tech-badge">Data Modeling</span>
+              </div>
+              <div class="project-stat-pill">
+                <i class="fa-solid fa-arrow-trend-up"></i> ~20% Stockout Reduction | +12% Sales Lift
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Inventory Analytics Dashboard for a Grocery Chain (Perishable Goods)</h3>
+              <p class="project-desc">
+                Perishable retail margins are destroyed by stockouts on high-demand items and write-offs on expiring inventory. 
+                Engineered an end-to-end real-time inventory tracking model analyzing stock levels, expiration dates, and sales velocity across 50+ perishable SKUs.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-cyan"></i>
+                  <span><strong>Dynamic Reorder Point Logic:</strong> Automated flags when days-of-supply fell below supplier lead-times.</span>
+                </div>
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-cyan"></i>
+                  <span><strong>Markdown Trigger Engine:</strong> Identified slow-moving goods 3 days prior to expiration to trigger targeted discounts.</span>
+                </div>
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-cyan"></i>
+                  <span><strong>Pivot Modeling & Reporting:</strong> Multi-dimensional slicing by category, vendor reliability, and velocity.</span>
+                </div>
+              </div>
+
+              <div class="project-meta-strip">
+                <div class="tools-used">
+                  <span>Excel Advanced</span>
+                  <span>Pivot Tables</span>
+                  <span>VLOOKUP / XLOOKUP</span>
+                  <span>Conditional Modeling</span>
+                </div>
+                <button class="btn btn-primary-sm open-modal-btn" data-modal="grocery-modal">
+                  <span>View Case Study</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Project 2: Financial Budget & Variance Analysis -->
+          <div class="project-card" data-category="finance">
+            <div class="project-banner bg-gradient-blue">
+              <div class="badge-row">
+                <span class="badge role-badge"><i class="fa-solid fa-shield-halved"></i> LEADERSHIP ROLE</span>
+                <span class="badge tech-badge">Financial Analysis</span>
+              </div>
+              <div class="project-stat-pill">
+                <i class="fa-solid fa-check-double"></i> 100% Audit Reconciliation
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Financial Budget & Variance Analysis System</h3>
+              <p class="project-desc">
+                Architected and maintained the fiscal ledger and variance analysis framework for the 20+ member Data Science Student Association (RTMNU). 
+                Tracked income, expenditures, and reserves with zero discrepancy.
+              </p>
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-blue"></i>
+                  <span>Reconciled monthly ledger records and generated board-level variance reports.</span>
+                </div>
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-blue"></i>
+                  <span>Created early warning alerts for over-budget event expenditures.</span>
+                </div>
+              </div>
+              <div class="project-meta-strip">
+                <div class="tools-used">
+                  <span>Variance Analysis</span>
+                  <span>Spreadsheets</span>
+                  <span>Auditing</span>
+                  <span>Ledger Control</span>
+                </div>
+                <button class="btn btn-outline-sm open-modal-btn" data-modal="finance-modal">
+                  <span>Read Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Deloitte Australia Data Analytics Simulation -->
+          <div class="project-card" data-category="simulations">
+            <div class="project-banner bg-gradient-dark">
+              <div class="badge-row">
+                <span class="badge sim-badge"><i class="fa-solid fa-award"></i> DELOITTE SIMULATION</span>
+                <span class="badge tech-badge">Data Analytics</span>
+              </div>
+              <div class="project-stat-pill">
+                <i class="fa-solid fa-brain"></i> Strategic Insights
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Deloitte Australia — Data Analytics Simulation</h3>
+              <p class="project-desc">
+                Conducted deep data exploration, telemetry quality checks, and customer segmentation for a simulated corporate client. Formulated strategic recommendations for executive leadership.
+              </p>
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-emerald"></i>
+                  <span>Identified data anomalies, structured clean schemas, and mapped customer lifetime value segments.</span>
+                </div>
+              </div>
+              <div class="project-meta-strip">
+                <div class="tools-used">
+                  <span>Data Cleaning</span>
+                  <span>Customer Segmentation</span>
+                  <span>Deloitte Framework</span>
+                </div>
+                <button class="btn btn-outline-sm open-modal-btn" data-modal="deloitte-modal">
+                  <span>Simulation Review</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Tata Data Visualisation Simulation -->
+          <div class="project-card" data-category="simulations">
+            <div class="project-banner bg-gradient-dark">
+              <div class="badge-row">
+                <span class="badge sim-badge"><i class="fa-solid fa-award"></i> TATA SIMULATION</span>
+                <span class="badge tech-badge">Power BI / Visuals</span>
+              </div>
+              <div class="project-stat-pill">
+                <i class="fa-solid fa-chart-pie"></i> C-Suite Storytelling
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Tata — Data Visualisation: Empowering Business with Insights</h3>
+              <p class="project-desc">
+                Designed executive dashboards answering complex retail business questions for C-level leadership. Created intuitive visuals highlighting regional revenue drivers and seasonal inventory anomalies.
+              </p>
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-cyan"></i>
+                  <span>Translated multi-country sales data into high-impact visual stories and executive briefs.</span>
+                </div>
+              </div>
+              <div class="project-meta-strip">
+                <div class="tools-used">
+                  <span>Data Visualization</span>
+                  <span>Executive Storytelling</span>
+                  <span>Power BI Concepts</span>
+                </div>
+                <button class="btn btn-outline-sm open-modal-btn" data-modal="tata-modal">
+                  <span>Simulation Review</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: J.P. Morgan Quantitative Research Simulation -->
+          <div class="project-card" data-category="simulations">
+            <div class="project-banner bg-gradient-dark">
+              <div class="badge-row">
+                <span class="badge sim-badge"><i class="fa-solid fa-award"></i> J.P. MORGAN</span>
+                <span class="badge tech-badge">Quant Modeling</span>
+              </div>
+              <div class="project-stat-pill">
+                <i class="fa-solid fa-calculator"></i> Mathematical Rigor
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">J.P. Morgan — Quantitative Research Virtual Job Simulation</h3>
+              <p class="project-desc">
+                Engaged with quantitative financial research methodologies, algorithmic analysis, risk modeling, and predictive metrics interpretation under high-precision investment banking standards.
+              </p>
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-violet"></i>
+                  <span>Applied quantitative reasoning to price forecasting, financial ratios, and risk analysis.</span>
+                </div>
+              </div>
+              <div class="project-meta-strip">
+                <div class="tools-used">
+                  <span>Quantitative Research</span>
+                  <span>Financial Math</span>
+                  <span>Risk Modeling</span>
+                </div>
+                <button class="btn btn-outline-sm open-modal-btn" data-modal="jpmorgan-modal">
+                  <span>Simulation Review</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Full Stack Web Development Internship (EduSkill) -->
+          <div class="project-card" data-category="simulations">
+            <div class="project-banner bg-gradient-dark">
+              <div class="badge-row">
+                <span class="badge sim-badge"><i class="fa-solid fa-code"></i> EDUSKILL INTERNSHIP</span>
+                <span class="badge tech-badge">Web Tech</span>
+              </div>
+              <div class="project-stat-pill">
+                <i class="fa-solid fa-laptop-code"></i> Full-Stack Roots
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EduSkill — Web Full Stack Developer Virtual Internship</h3>
+              <p class="project-desc">
+                Built foundational web engineering skills connecting frontend dashboards with backend data services, giving me a strong edge when collaborating with engineering and database teams.
+              </p>
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-circle-check text-emerald"></i>
+                  <span>Hands-on practice in HTML5, CSS3, JavaScript, APIs, and client-server communication.</span>
+                </div>
+              </div>
+              <div class="project-meta-strip">
+                <div class="tools-used">
+                  <span>HTML5 / CSS3</span>
+                  <span>JavaScript</span>
+                  <span>Web Architecture</span>
+                </div>
+                <button class="btn btn-outline-sm open-modal-btn" data-modal="eduskill-modal">
+                  <span>Internship Review</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & EXPERIENCE TIMELINE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-timeline"></i> CAREER & LEADERSHIP</span>
+          <h2 class="section-title">Experience & Organizational Impact</h2>
+          <p class="section-desc">Proven reliability managing financial resources and spearheading student initiatives.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="t-badge-row">
+                <span class="t-role">Treasurer</span>
+                <span class="t-period"><i class="fa-regular fa-calendar"></i> 2025 - 2026</span>
+              </div>
+              <h3 class="t-org">Data Science Student Association</h3>
+              <div class="t-sub"><i class="fa-solid fa-location-dot"></i> Rashtrasant Tukadoji Maharaj Nagpur University (RTMNU), Nagpur</div>
+
+              <ul class="t-bullet-list">
+                <li>
+                  <strong>Budget Stewardship:</strong> Managed and analyzed financial budgets for a 20+ member student body, leveraging structured spreadsheets to track revenues, operational expenditures, and reserve funds.
+                </li>
+                <li>
+                  <strong>Variance Analysis:</strong> Regularly reconciled bank ledgers against invoices, preparing comprehensive variance analysis reports that pinpointed discrepancies and guided executive board reallocation.
+                </li>
+                <li>
+                  <strong>Audit Readiness:</strong> Maintained rigorous accounting logs and expense verification systems, achieving 100% data integrity and frictionless audit clearances.
+                </li>
+              </ul>
+
+              <div class="t-skills-tags">
+                <span class="tag">Financial Tracking</span>
+                <span class="tag">Variance Reporting</span>
+                <span class="tag">Spreadsheet Modeling</span>
+                <span class="tag">Executive Presentation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="t-badge-row">
+                <span class="t-role">Active Member & Technical Contributor</span>
+                <span class="t-period"><i class="fa-regular fa-calendar"></i> 2025 - Present</span>
+              </div>
+              <h3 class="t-org">Data Science Student Association</h3>
+              <div class="t-sub"><i class="fa-solid fa-location-dot"></i> RTMNU, Nagpur</div>
+
+              <ul class="t-bullet-list">
+                <li>Collaborate with student data scientists on analytics workshops, SQL query clinics, and dashboarding tutorials.</li>
+                <li>Participated in peer code reviews, database schema design discussions, and exploratory data challenges.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="t-badge-row">
+                <span class="t-role">Hackathon Participant & Tech Fest Volunteer</span>
+                <span class="t-period"><i class="fa-regular fa-calendar"></i> 2026</span>
+              </div>
+              <h3 class="t-org">Inter-College Data Hackathon / Ideathon & SCET Tech Fest</h3>
+              <div class="t-sub"><i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra</div>
+
+              <ul class="t-bullet-list">
+                <li>Competed in the Inter-College Data Hackathon / Ideathon (2026), modeling real-world datasets under rapid deadline conditions.</li>
+                <li>Served as Event Operations Volunteer for Department Tech Fest at Suryodaya College of Engineering & Technology (SCET).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-certificate"></i> CREDENTIALS & ACADEMICS</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-desc">Academic excellence backed by globally recognized industry job simulations.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Left: Education Column -->
+          <div class="edu-column">
+            <h3 class="column-title"><i class="fa-solid fa-graduation-cap text-cyan"></i> Academic Background</h3>
+
+            <div class="edu-card">
+              <div class="edu-year">2023 - 2027 (Expected)</div>
+              <h4 class="edu-degree">B.Tech in Computer Data Science</h4>
+              <p class="edu-institute">Suryodaya College of Engineering & Technology (SCET)</p>
+              <p class="edu-affiliation"><i class="fa-solid fa-building-columns"></i> Affiliated to RTMNU, Nagpur, Maharashtra</p>
+              <div class="edu-highlights">
+                <span>Specialization: Data Science, Database Management, Statistical Computing, Algorithms.</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-year">Completed</div>
+              <h4 class="edu-degree">Secondary School Certificate (10th)</h4>
+              <p class="edu-institute">St. Claret School</p>
+              <p class="edu-affiliation"><i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra</p>
+              <div class="edu-highlights">
+                <span>Solid foundation in Mathematics, Science, and Analytical Logic.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Certifications & Simulations Column -->
+          <div class="cert-column">
+            <h3 class="column-title"><i class="fa-solid fa-award text-yellow"></i> Industry Job Simulations</h3>
+
+            <div class="cert-grid-cards">
+              <div class="cert-mini-card">
+                <div class="cert-icon-box text-blue">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="cert-info">
+                  <h4 class="cert-name">Deloitte Australia</h4>
+                  <p class="cert-detail">Data Analytics Job Simulation</p>
+                  <span class="cert-tag">Telemetry, Segmentation, Quality QA</span>
+                </div>
+              </div>
+
+              <div class="cert-mini-card">
+                <div class="cert-icon-box text-cyan">
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div class="cert-info">
+                  <h4 class="cert-name">Tata</h4>
+                  <p class="cert-detail">Data Visualisation: Empowering Business with Effective Insights</p>
+                  <span class="cert-tag">C-Suite Dashboards, Power BI</span>
+                </div>
+              </div>
+
+              <div class="cert-mini-card">
+                <div class="cert-icon-box text-violet">
+                  <i class="fa-solid fa-calculator"></i>
+                </div>
+                <div class="cert-info">
+                  <h4 class="cert-name">J.P. Morgan</h4>
+                  <p class="cert-detail">Quantitative Research Virtual Job Simulation</p>
+                  <span class="cert-tag">Financial Modeling, Algorithmic Analysis</span>
+                </div>
+              </div>
+
+              <div class="cert-mini-card">
+                <div class="cert-icon-box text-emerald">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="cert-info">
+                  <h4 class="cert-name">EduSkill</h4>
+                  <p class="cert-detail">Web Full Stack Developer Virtual Internship</p>
+                  <span class="cert-tag">Full-Stack Web Foundations, APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE ME SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-handshake"></i> GET IN TOUCH</span>
+          <h2 class="section-title">Let's Discuss Data Opportunities</h2>
+          <p class="section-desc">Open for full-time Data Analyst, Business Analyst, and Analytics roles. Let's start a conversation!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Quick Channels -->
+          <div class="contact-info-panel">
+            <h3 class="ci-title">Direct Communication</h3>
+            <p class="ci-desc">
+              Whether you are a recruiter looking for an analyst with practical ROI impact or have a question regarding my projects, feel free to reach out.
+            </p>
+
+            <div class="ci-cards-list">
+              <div class="ci-card">
+                <div class="ci-icon text-cyan"><i class="fa-solid fa-envelope"></i></div>
+                <div class="ci-content">
+                  <span class="ci-label">Email</span>
+                  <a href="mailto:adityapawar739@gmail.com" class="ci-val">adityapawar739@gmail.com</a>
+                </div>
+                <button class="ci-action-btn" id="btn-copy-email" title="Copy to clipboard">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="ci-card">
+                <div class="ci-icon text-emerald"><i class="fa-solid fa-phone"></i></div>
+                <div class="ci-content">
+                  <span class="ci-label">Phone / WhatsApp</span>
+                  <a href="tel:9373113299" class="ci-val">+91 9373113299</a>
+                </div>
+                <a href="https://wa.me/919373113299?text=Hi%20Aditya,%20I%20reviewed%20your%20Data%20Analyst%20portfolio!" target="_blank" rel="noopener" class="ci-action-btn whatsapp-btn" title="Chat on WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+
+              <div class="ci-card">
+                <div class="ci-icon text-yellow"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="ci-content">
+                  <span class="ci-label">Location</span>
+                  <span class="ci-val">Butibori, Nagpur, Maharashtra, India</span>
+                </div>
+                <div class="ci-action-badge">Open to Relocation</div>
+              </div>
+            </div>
+
+            <!-- Resume Download Callout Box -->
+            <div class="resume-callout-box">
+              <div class="rc-left">
+                <i class="fa-solid fa-file-pdf text-red"></i>
+                <div>
+                  <h4 class="rc-title">Aditya Pawar - Resume</h4>
+                  <p class="rc-sub">Complete single-page format for recruiters</p>
+                </div>
+              </div>
+              <button class="btn btn-primary-sm" id="btn-download-resume-bottom">
+                <i class="fa-solid fa-download"></i> View & Print CV
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Quick Message Form -->
+          <div class="contact-form-panel">
+            <h3 class="ci-title">Send a Quick Message</h3>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma / Tech Recruiter" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="e.g. rahul@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Opportunity Type</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <select id="subject" name="subject" required>
+                    <option value="Data Analyst Role">Full-Time Data Analyst Role</option>
+                    <option value="Business Analyst Role">Full-Time Business Analyst Role</option>
+                    <option value="Internship / Trainee">Data Analytics Internship / Trainee</option>
+                    <option value="Project Collaboration">Freelance / Project Collaboration</option>
+                    <option value="General Inquiry">General Networking / Coffee Chat</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <div class="input-wrapper text-area-wrapper">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="message" name="message" rows="4" placeholder="Hi Aditya, we came across your grocery inventory analytics and financial variance projects..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message via Email Client</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="logo-box-sm">AP</span>
+          <span class="footer-name">Aditya Pawar</span>
+        </div>
+        <p class="footer-tagline">Data Analyst & Business Analyst | Turning numbers into business clarity.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">© 2026 Aditya Pawar. All rights reserved.</p>
+        <p class="built-with">Crafted with modern HTML5, CSS3, JavaScript & Chart.js</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME MODAL / VIEW POPUP -->
+  <div class="modal" id="resumeModal">
+    <div class="modal-overlay" id="resumeOverlay"></div>
+    <div class="modal-window resume-modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-file-invoice text-cyan"></i>
+          <h3>Aditya Pawar — Official Resume</h3>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-primary-sm" onclick="window.print()"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+          <button class="modal-close-btn" id="closeResumeModal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      <div class="modal-body printable-resume">
+        <div class="resume-paper">
+          <div class="res-header">
+            <h1 class="res-name">ADITYA PAWAR</h1>
+            <p class="res-role-title">Data Analyst | Business Analyst</p>
+            <p class="res-contact-info">
+              <span><i class="fa-solid fa-location-dot"></i> Butibori, Nagpur, Maharashtra</span> • 
+              <span><i class="fa-solid fa-phone"></i> +91 9373113299</span> • 
+              <span><i class="fa-solid fa-envelope"></i> adityapawar739@gmail.com</span>
+            </p>
+          </div>
+
+          <div class="res-section">
+            <h2 class="res-sec-title">PROFILE</h2>
+            <p class="res-text">
+              Final-year B.Tech (Computer Data Science) student with practical experience turning raw data into business decisions using SQL, Excel, and Power BI. Built a real-time inventory analytics dashboard that reduced stockouts by ~20% and increased sales by 12%. Strengthened analytical and financial reasoning as Treasurer of a 20+ member student association, managing budgets, reconciliations, and variance analysis. Completed job simulations with Deloitte Australia (Data Analytics) and Tata (Data Visualisation), plus a virtual internship in full-stack web development. Seeking a Data Analyst role to apply strong data cleaning, visualization, and storytelling skills to real business problems.
+            </p>
+          </div>
+
+          <div class="res-section">
+            <h2 class="res-sec-title">TECHNICAL SKILLS</h2>
+            <div class="res-skills-grid">
+              <div><strong>Data Analysis & Tools:</strong> SQL, Microsoft Excel (Pivot Tables, VLOOKUP, INDEX/MATCH), Power BI, Google Sheets</div>
+              <div><strong>Data Handling:</strong> Data Cleaning, Data Visualization, Dashboarding, Reporting, Outlier Detection</div>
+              <div><strong>Business Analysis:</strong> Demand Forecasting, Inventory Analysis, Variance Analysis, Trend Analysis</div>
+              <div><strong>Financial Analysis:</strong> Budget Tracking, Reconciliation, Expense Reporting, Audit Preparation</div>
+              <div><strong>Other:</strong> Basic Web Development (HTML/CSS, Full-Stack fundamentals via virtual internship)</div>
+              <div><strong>Communication:</strong> English (fluent), Hindi (fluent)</div>
+            </div>
+          </div>
+
+          <div class="res-section">
+            <h2 class="res-sec-title">EXPERIENCE</h2>
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">Treasurer</span>
+                <span class="res-date">2025 - 2026</span>
+              </div>
+              <div class="res-italic">Data Science Student Association, RTMNU, Nagpur</div>
+              <ul class="res-bullets">
+                <li>Manage and analyze budgets for a 20+ member student body, using spreadsheets to track income, expenses, and reserves</li>
+                <li>Reconcile accounts and prepare variance analysis reports, identifying discrepancies and presenting findings to the board</li>
+                <li>Maintain ledgers and expense reports, ensuring data accuracy and audit readiness</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="res-section">
+            <h2 class="res-sec-title">PROJECTS</h2>
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">Inventory Analytics Dashboard for a Grocery Chain with Perishable Goods</span>
+                <span class="res-date">Featured Project</span>
+              </div>
+              <ul class="res-bullets">
+                <li>Designed and built a real-time inventory dashboard in Excel to analyze stock levels, expiry dates, and sales velocity across 50+ products</li>
+                <li>Used data analysis to identify slow-moving and overstocked items, enabling dynamic reordering and markdown decisions that reduced stockouts by ~20% and lifted sales by 12%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="res-section">
+            <h2 class="res-sec-title">EDUCATION</h2>
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">B.Tech, Computer Data Science (Pursuing)</span>
+                <span class="res-date">2023 - 2027 (Expected)</span>
+              </div>
+              <div class="res-italic">Suryodaya College of Engineering, Nagpur (Affiliated to RTMNU), Maharashtra</div>
+            </div>
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">Secondary School (10th)</span>
+                <span class="res-date">Completed</span>
+              </div>
+              <div class="res-italic">St. Claret School, Nagpur, Maharashtra</div>
+            </div>
+          </div>
+
+          <div class="res-section">
+            <h2 class="res-sec-title">CERTIFICATIONS & ACTIVITIES</h2>
+            <ul class="res-bullets">
+              <li><strong>J.P. Morgan:</strong> Quantitative Research Virtual Job Simulation</li>
+              <li><strong>Deloitte Australia:</strong> Data Analytics Job Simulation</li>
+              <li><strong>Tata:</strong> Data Visualisation: Empowering Business with Effective Insights Job Simulation</li>
+              <li><strong>EduSkill:</strong> Web Full Stack Developer Virtual Internship</li>
+              <li>Active Member, Data Science Student Association, RTMNU (2025 - Present)</li>
+              <li>Participant, Inter-College Data Hackathon / Ideathon (2026) | Volunteer, Department Tech Fest, SCET (2026)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GENERIC CASE STUDY MODAL -->
+  <div class="modal" id="caseStudyModal">
+    <div class="modal-overlay" id="caseStudyOverlay"></div>
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="modalCaseTitle">Project Case Study</h3>
+        <button class="modal-close-btn" id="closeCaseModal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body" id="modalCaseBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check text-emerald"></i>
+    <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
